@@ -7,7 +7,7 @@ pub mod utils;
 
 use instructions::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("8u3q7KUBALJgKLpmxA94RNkuYxfmrw9C9oiM1Dtb8yNd");
 
 #[program]
 pub mod arc {

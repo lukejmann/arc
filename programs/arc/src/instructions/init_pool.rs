@@ -21,13 +21,14 @@ pub fn handler(
 
     let pool = &mut ctx.accounts.pool;
     if ctx.accounts.collection.key() != ctx.accounts.system_program.key() {
-    pool.collection = Some(ctx.accounts.collection.key());
+        pool.collection = Some(ctx.accounts.collection.key());
     }
     if merkle_root != [0u8; 32] {
         pool.merkle_root = Some(merkle_root);
     }
     pool.n_nft = 0;
     pool.n_token = 0;
+
     pool.mint = ctx.accounts.mint.key();
     pool.owner = ctx.accounts.owner.key();
     pool.owner_nonce = owner_nonce;
@@ -56,7 +57,7 @@ pub struct InitializePool<'info> {
     #[account(
         init, 
         // toodo: fix space
-        space = 200,
+        space = 214,
         payer=owner, 
         seeds=[b"pool", owner.key().as_ref(), collection.key().as_ref(), mint.key().as_ref(), &[owner_nonce]], 
         bump,

@@ -1,7 +1,7 @@
 [features]
 seeds = false
 [programs.devnet]
-arc = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+arc = "8u3q7KUBALJgKLpmxA94RNkuYxfmrw9C9oiM1Dtb8yNd"
 
 [registry]
 url = "https://anchor.projectserum.com"
